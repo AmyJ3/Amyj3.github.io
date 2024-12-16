@@ -1,0 +1,404 @@
+/* Typography */
+h1 {
+    color: #694931;
+    font-family: "Sansita";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142%;
+    margin-bottom: 0;
+    margin-top: 6px;
+}
+
+h2 {
+    color: #694931;
+    font-family: "Nunito Sans";
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #694931;
+    font-family: "Nunito Sans";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    margin: 0;
+    margin-bottom: 30px;
+}
+h4 {
+    color:#fbdce2 ;
+    font-family: "Nunito Sans";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0;
+    margin-bottom: 30px;
+}
+p {
+    font-size: 18px;
+    font-style: normal;
+    line-height: 170%;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a:hover {
+    color: #BB786B;
+}
+
+/* Layout */
+img.icon {
+    border-radius: 0%;
+}
+
+Body {
+    height: 100%;
+    /* Removes default margin */
+    padding: 0;
+    /* Removes default padding */
+    height: 100%;
+    /* Ensures the body takes up the full height */
+    width: auto;
+    min-height: 100vh;
+    /* Ensures the body takes up at least the full viewport height */
+    box-sizing: border-box;
+    cursor: none;
+    background-image: url(Background/Gradient.png);
+    /* Replace with your image path */
+    background-size: cover;
+    /* Makes the image cover the entire area */
+    background-repeat: no-repeat;
+    /* Prevents tiling */
+    background-position: center;
+    /* Centers the image */
+    /* default font family. hooray! */
+    font-family: "Nunito Sans";
+    color: #694931;
+
+}
+
+img {
+    border-radius: 10px;
+}
+
+.custom-cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #905c52;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+}
+
+
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    /* text-align: center; */
+    padding: 20px 50px;
+    margin-bottom: 50px;
+
+}
+
+.title {
+    margin: 0;
+}
+
+.nav-items {
+    cursor: none;
+    /* remove the bullets from the unordered list */
+    list-style-type: none;
+    /* remove the default left padding from the unordered list */
+    padding-left: 0;
+    /* right-align our navigation links */
+    text-align: right;
+}
+
+/* make the list item elements into inline elements so that they flow horizontally instead of stacking vertically (like block elements do). */
+.nav-items li {
+    display: inline;
+    padding-left: 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-items a.current {
+    color: #BB786B;
+    /* Matches hover color */
+}
+
+
+
+footer.footer {
+    position: relative;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.footer-items {
+    display: flex;
+    width: auto;
+    height: 81px;
+    padding: 0px 30px;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    flex-shrink: 0;
+}
+
+
+div.container {
+    flex: 1;
+    position: relative;
+    width: auto;
+    height: 100%;
+    Padding: 0px 20px;
+}
+
+.aboutme {
+    Padding: 0px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+}
+
+section.aboutmesection2 {
+    margin-top: auto;
+}
+
+.gallery {
+    Padding: 0px 50px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+
+
+.galleryimage1 {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.galleryimage2 {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+
+.galleryimage3 {
+    grid-column-start: 3;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+
+.projectpage {
+    Padding: 0px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 100px;
+}
+
+div.projectimages {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #BB786B;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dotsline {
+    text-align: center;
+}
+
+.active,
+.dot:hover {
+    background-color: hsl(10, 34%, 45%);
+}
+
+/* Fading animation */
+
+
+.content {
+
+    overflow: auto;
+    /* Allow content to scroll if it overflows */
+}
+
+.image-grid {
+    display: grid;
+    flex: auto;
+    flex-wrap: wrap;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0px 30px;
+    grid-gap: 16px;
+    /* Default gap for both rows and columns */
+    /* To specifically control row gap */
+    row-gap: 24px;
+    /* Set minimum gap between rows */
+}
+
+
+
+div.image1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-radius: 10px;
+    width: 440px;
+    /* you must set a width and height, and it must be the same in the rule below. */
+    height: 620px;
+    background-image: url(indeximages/Packagingthumbnail.png);
+}
+
+div.image2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-radius: 10px;
+    width: 440px;
+    /* you must set a width and height, and it must be the same in the rule below. */
+    height: 620px;
+    background-image: url(indeximages/brandingthumbnail.png);
+}
+div.image3 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    border-radius: 10px;
+    width: 440px;
+    /* you must set a width and height, and it must be the same in the rule below. */
+    height: 290px;
+    background-image: url(printimages/Thumbnail3.png);
+}
+div.image4 {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    border-radius: 10px;
+    width: 440px;
+    /* you must set a width and height, and it must be the same in the rule below. */
+    height: 290px;
+    background-image: url(mixedmediaimages/thumbnail.png);
+}
+div.text_container {
+    width: 440px; /* you must set a width and height, and it must be the same in the rule above. */
+    height: 620px;
+    font-family: Helvetica;
+    font-size: 3em;
+    color: #ffffff;
+    text-align: center; /* horizontally center the text. */
+    background-color:rgba(105, 69, 61, 0.7); /* create an overlay color, salmon, at 50% opacity. */
+    opacity: 0; /* set the initial appearance of the element to be "invisible." */
+    transition: opacity 0.3s ease; /* add animation for the element's opacity. */
+    display: grid; /* this changes the "margin" property behavior in the p.text{} rule below. */
+}
+div.text_container:hover {
+    opacity: 1; /* reveal the hidden element */
+}
+div.secondtext_container {
+    width: 440px; /* you must set a width and height, and it must be the same in the rule above. */
+    height: 290px;
+    font-family: Helvetica;
+    font-size: 3em;
+    color: #ffffff;
+    text-align: center; /* horizontally center the text. */
+    background-color:rgba(105, 69, 61, 0.7); /* create an overlay color, salmon, at 50% opacity. */
+    opacity: 0; /* set the initial appearance of the element to be "invisible." */
+    transition: opacity 0.3s ease; /* add animation for the element's opacity. */
+    display: grid; /* this changes the "margin" property behavior in the p.text{} rule below. */
+}
+div.secondtext_container:hover {
+    opacity: 1; /* reveal the hidden element */
+}
+h4.text {
+    margin: auto; /* vertically center the text. */
+}
+
+img#place-holder4 {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    border-radius: 10px;
+    width: 100%;
+    /* Make images take full width of their grid cell */
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+    /* Crop image to fit its box (optional) */
+
+}
