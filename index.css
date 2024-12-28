@@ -33,7 +33,7 @@ h3 {
 }
 h4 {
     color:#fbdce2 ;
-    font-family: "Nunito Sans";
+    font-family: "sansita";
     font-size: 38px;
     font-style: normal;
     font-weight: 400;
@@ -303,13 +303,13 @@ div.projectimages {
     flex-wrap: wrap;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    justify-content: space-between;
-    align-items: stretch;
+    justify-content: center;
+    align-items: center;
     padding: 0px 30px;
-    grid-gap: 16px;
+    grid-gap: 24px;
     /* Default gap for both rows and columns */
     /* To specifically control row gap */
-    row-gap: 24px;
+    row-gap: 36px;
     /* Set minimum gap between rows */
 }
 
@@ -321,9 +321,9 @@ div.image1 {
     grid-row-start: 1;
     grid-row-end: 3;
     border-radius: 10px;
-    width: 440px;
+    width: auto;
     /* you must set a width and height, and it must be the same in the rule below. */
-    height: 620px;
+    height: auto;
     background-image: url(indeximages/Packagingthumbnail.png);
 }
 
@@ -359,6 +359,7 @@ div.image4 {
 div.text_container {
     width: 440px; /* you must set a width and height, and it must be the same in the rule above. */
     height: 620px;
+    border-radius: 10px;
     font-family: Helvetica;
     font-size: 3em;
     color: #ffffff;
@@ -374,6 +375,7 @@ div.text_container:hover {
 div.secondtext_container {
     width: 440px; /* you must set a width and height, and it must be the same in the rule above. */
     height: 290px;
+    border-radius: 10px;
     font-family: Helvetica;
     font-size: 3em;
     color: #ffffff;
